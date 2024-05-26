@@ -90,8 +90,8 @@
             original form, accompanied by English versions from the 1914 translation by H. Rackham.
         </div>
         <ul>
-            <li>Первый элемент списка</li>
-            <li>Второй элемент списка</li>
+            <li>JОсновные html-теги</li>
+            <li><a href="#form">Теги полей и элементов управления форм</a></li>
             <li>Третий элемент списка</li>
         </ul>
         <ol>
@@ -104,6 +104,51 @@
             <area shape="rect" coords="0, 0, 500, 500" href="https://onephrase.ru" target="_blank" title="Follow link https://onephrase.ru"> 
             <!-- Есть и другие shape, их можно посмотреть в справочнике -->
         </map>
+        <h2 id="form">Теги полей и элементов управления форм</h2>
+        <form method="post">
+            <!-- required - обязательно для заполнения перед отправкой формы -->
+            <input required placeholder="Текст, если поле пустое. Введите год рождения" type="text" maxlength="4" size="50" name="" id="">
+            <!-- maxlength ограничивает количество символов, которое пользователь может ввести в input поле -->
+            <br><br>
+            <input type="submit" value="Text on the button">
+            <br><br>
+            <input type="reset" value="Text on reset button">
+            <br><br>
+            <!-- При disabled кнопка будет неактивна -->
+            <input type="button" disabled value="button with no use">
+            <br><br>
+            <!-- Еще одна кнопка -->
+            <button>
+                <img src="https://yourcstm.space/get_photo_alternative/temno_sinij/hoodie/ohmycode" height="150" alt="">
+            </button>
+            <br><br>
+            <!-- Большое текстовое поле (для ввода) При readonly туда ничего писать нельзя-->
+            <textarea cols="30" rows="5" readonly placeholder="Something here" name="" id=""></textarea>
+            <br><br>
+            <select>
+                <option disabled>Выберите цвет</option>
+                <option value="">Red</option>
+                <option selected>Blue</option>
+                <optgroup label="More colors">
+                    <option value="">White</option>
+                    <option value="">Yellow</option>
+                    <option value="">Green</option>
+                </optgroup>
+            </select>
+            <br><br>
+            Checked - по умолчанию отмеченная галочка. id и for - штуки для того, чтобы галочка срабатывала при нажатии на текст
+            <input id="dontSend" checked type="checkbox">&nbsp;<label for="dontSend">Не присылать мне рекламу
+            </label><br><br>
+            <!-- Одинаковый аттрибут name позволяет нам связать два этих чекбокса -->
+            <input type="radio" name="choice" id=""> &nbsp;да<br>
+            <input type="radio" name="choice" checked id=""> &nbsp;нет<br><br>
+            <input type="file" name="" id=""> <br><br>
+            <input type="password" name="" id=""><br><br>
+            <hr><br>
+            <input type="submit"> <br><br>
+            <input type="email" name="" id="">
+            <br><br><br><br><br><br>
+        </form>
     </main>
     <footer>
 
