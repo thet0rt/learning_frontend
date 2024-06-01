@@ -31,13 +31,14 @@
 #black-bar a {
     color: white;
     /* display: none; */
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 html, body {
     margin: 0;
     padding: 0;
     min-width: 1000px;
+    /* overflow: hidden; */
 }
 
 /* Единицы измерения: px - пиксели. em - ? ex - размер блока равный высоте буквы x
@@ -49,6 +50,7 @@ html, body {
 .fixed_container {
     width: 960px;
     margin: 0 auto;
+    position: relative
 }
 
 .inline-block {
@@ -58,4 +60,27 @@ html, body {
     text-align: right;
     margin-bottom: 10px;
     display: inline-block;
+}
+
+#datetime {
+    float: right;
+}
+
+/* Тег position relative позволяет задавать отступы от текущего расположения элемента */
+/* Position absolute позволяет задавать отступы от окна браузера */
+#logo {
+    position: absolute;
+    top: 40px;
+    /* left: 40px; */
+    /* right: 100px; */
+}
+
+/* Position fixed - фиксированно относительно окна браузера */
+
+#up-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    padding: 10px;
 }
