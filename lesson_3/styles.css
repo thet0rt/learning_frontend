@@ -30,6 +30,8 @@
 /* Применить стили к тегу а только в элементе black-bar */
 #black-bar a {
     color: white;
+    /* display: none; */
+    visibility: hidden;
 }
 
 html, body {
@@ -47,4 +49,13 @@ html, body {
 .fixed_container {
     width: 960px;
     margin: 0 auto;
+}
+
+.inline-block {
+    background-color: yellow;
+    padding: 10px;
+    width: 50px;
+    text-align: right;
+    margin-bottom: 10px;
+    display: inline-block;
 }
