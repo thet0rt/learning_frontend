@@ -1,0 +1,21 @@
+/* div {
+    background-color: black; 
+    color: white
+} */
+/* Через точку мы обращаемся к классу */
+.black_bar {
+    background-color: black;
+}
+.white_text {
+    color: white;
+}
+/* Через решетку мы обращаемся к id объекта */
+#black-bar {
+    background-color: black;
+    color: white;
+}
+
+/* Применить стили к тегу а только в элементе black-bar */
+#black-bar a {
+    color: white;
+}
