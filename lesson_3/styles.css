@@ -148,8 +148,16 @@ body {
     float: left;
 }
 
+#central-container .fixed_container {
+    overflow-y: hidden;
+}
+
 #column-right {
     background-color: blue;
     width: 250px;
     float: right;
+}
+
+#special-news {
+    margin-top: 20px;
 }
