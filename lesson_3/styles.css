@@ -139,7 +139,6 @@ h2 {
 
 .menu_button {
     padding-right: 35px
-
 }
 
 #column-left {
@@ -149,7 +148,6 @@ h2 {
 }
 
 #column-center {
-    background-color: green;
     width: 420px;
     margin-left: 20px;
     margin-right: 20px;
@@ -220,6 +218,7 @@ h2 {
 .news-item-text {
     margin-bottom: 20px;
 }
+
 /* !!! Чтобы элементы были позиционированы абсолютно внутри какого-то элемента, position родительского элемента должен быть отличен от static */
 
 .news-item-props {
@@ -230,6 +229,7 @@ h2 {
 
 .news-item-props a {
     color: #91919f;
+    text-decoration: none;
 }
 
 .news-time {
@@ -248,4 +248,105 @@ h2 {
     background-image: url('img/icon_comments.png');
     background-repeat: no-repeat;
     padding-left: 13px;
+}
+
+#main_news {
+    height: 320px;
+    /* margin-bottom: 20px; */
+    background-image: url('./img/1_news_background.png');
+}
+
+#main_news a {
+    color: white;
+}
+
+#main_news .news-item-props {
+    font-size: 12px;
+    color: white;
+    position: relative;
+}
+
+
+
+#main_news .news-item-props a {
+    position: absolute;
+    top: 115px;
+    left: 20px;
+}
+
+#news_header {
+    font-size: 30px;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+#news-date {
+    position: absolute;
+    top: 270px;
+    left: 20px;
+}
+
+#main_news .news-item-props .news-time {
+    position: absolute;
+    top: 270px;
+    left: 120px;
+}
+
+
+.news_row {
+    margin-top: 20px;
+    height: 235px;
+}
+
+.piece_of_news {
+    width: 200px;
+    height: 235px;
+    position: relative;
+}
+
+.left_new {
+    float: left;
+}
+
+.right_new {
+    float: right;
+}
+
+.piece_of_news .news-time {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    background-image: url('img/icon_time.png');
+    background-repeat: no-repeat;
+    padding-left: 13px;
+}
+
+
+.piece_of_news .news-comments-count {
+    position: absolute;
+    top: 0;
+    left: 160px;
+    background-image: url('img/icon_comments.png');
+    background-repeat: no-repeat;
+    padding-left: 13px;
+}
+
+.piece_of_news a {
+    color: #91919f;
+    text-decoration: none;
+}
+
+.news_text {
+    font-size: 14px;
+}
+
+.piece_of_news img {
+    max-width: 200px;
+    max-height: 140px;
+}
+
+.piece_of_news .news-item-props {
+    position: absolute;
+    top: 220px;
 }
