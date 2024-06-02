@@ -200,13 +200,13 @@ h2 {
     padding-top: 20px;
     /* background-color: rgb(249, 249, 249); */
     background-color: #f9f9f9;
-    background-image: url('./background-top.png');
+    background-image: url('img/background-top.png');
     background-repeat: repeat-x;
 }
 
 #site_search {
     background-color: #f3f3f3;
-    background-image: url('./icon_search.png');
+    background-image: url('img/icon_search.png');
     background-repeat: no-repeat;
     background-position-x: 98%;
     background-position-y: 50%;
@@ -236,7 +236,7 @@ h2 {
     position: absolute;
     top: 0px;
     left: 120px;
-    background-image: url('./icon_time.png');
+    background-image: url('img/icon_time.png');
     background-repeat: no-repeat;
     padding-left: 13px;
 }
@@ -245,7 +245,7 @@ h2 {
     position: absolute;
     top: 0;
     left: 180px;
-    background-image: url('./icon_comments.png');
+    background-image: url('img/icon_comments.png');
     background-repeat: no-repeat;
     padding-left: 13px;
 }
