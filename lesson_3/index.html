@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новостное агентство</title>
+    <!-- <style>  -- 1 вариант
+        div {
+            background-color: black; 
+            color: white
+        }
+    </style> -->
+    <!-- 2 вариант (рекомендован) -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- <style>
+        3 вариант
+        @import url("styles.css");
+    </style> -->
+</head>
+
+<body>
+    <!-- Класс class позволяет задать стиль не всему тегу, а только определенным элементам  -->
+    <!-- <div class="black_bar white_text">Самые <a href="#">свежие новости</a> в реальном времени</div>
+    <div class="black_bar">testtesttesttesttesttesttesttest</div> -->
+    <!-- Еще один способ - это обращаться по id -->
+    <div id="black-bar">
+        <div class="fixed_container">Самые <a href="#">свежие новости</a> в реальном времени
+            <div id="datetime">12:30 19.06.2019</div>
+        </div>
+    </div>
+    <!-- <div class="inline-block">Text</div>
+    <div class="inline-block">Text</div>
+    <div class="inline-block">Text</div>
+    <div class="inline-block">Text</div>
+    <div class="inline-block">Text</div>
+    <div class="inline-block">Text</div>
+
+    <div style="background-color: red; width: 200px; height: 100px; overflow-y: auto;">
+        <div style="background-color: green; width: 100px; height: 200px;">
+
+        </div>
+        
+        </div>
+    </div> -->
+    <div id="header">
+        <div class="fixed_container">
+            <!-- внизу position relative и z-index 10 - это позволяет переместить этот блок на передний план. Если мы пропишем у лого z-index 20, то мы переместим его вперед -->
+            <!-- <div style="position: relative; z-index: 10; background-color: red; width: 100px; height: 200px;"></div> -->
+            <img id="logo" src="img/logo.png" alt="">
+            <form method="post" id="city_selection">
+                <select>
+                    <option>Москва</option>
+                    <option>Нижний Новгород</option>
+                    <option>Бор</option>
+                    <option>Алматы</option>
+                    <option>Коломбо</option>
+                    <option>Стамбул</option>
+                </select>
+            </form>
+            <input id="site_search" required placeholder="Поиск по сайту" type="text" size="50">
+            <div id="temperature">22°C</div>
+            <img id="cloud" src="img/cloud.png" alt="">
+        </div>
+    </div>
+    <div class="header_panel">
+        <!-- fixed_container задает нам ширину блока -->
+        <div class="fixed_container">
+            <a class="menu_button" href="">Главная</a>
+            <a class="menu_button" href="">Политика</a>
+            <a class="menu_button" href="">Общество</a>
+            <a class="menu_button" href="">Экономика</a>
+            <a class="menu_button" href="">В мире</a>
+            <a class="menu_button" href="">Проишествия</a>
+            <a class="menu_button" href="">Спорт</a>
+            <a class="menu_button" href="">Наука</a>
+            <a class="menu_button" href="">Туризм</a>
+        </div>
+    </div>
+    <div id="central-container">
+        <div class="fixed_container">
+            <div id="column-left">
+                <h2>Новости дня</h2>
+                <div class="news-item">
+                    <div class="news-item-text">Кот Ахилл предсказал
+                        победу российской сборной
+                        над Египтом на ЧМ-2018</div>
+                    <div class="news-item-props">
+                        <a href="#">/ЧМ по футболу</a>
+                        <div class="news-time">10:45</div>
+                        <div class="news-comments-count">17</div>
+                    </div>
+                </div>
+            </div>
+            <div id="column-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of
+                type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                the
+                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum
+                <br><br>
+                <b>Как создать таблицу только с помощью div?</b>
+                <div class="table">
+                    <div class="row">
+                        <div class="cell">1</div>
+                        <div class="cell">2</div>
+                        <div class="cell">3</div>
+                        <div class="cell">4</div>
+                        <div class="cell">5</div>
+                        <div class="cell">6</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">1</div>
+                        <div class="cell">2</div>
+                        <div class="cell">3</div>
+                        <div class="cell">4</div>
+                    </div>
+
+                </div>
+                <div class="list">
+                    <div class="list-item">Option 1</div>
+                    <div class="list-item">Option 2</div>
+                    <div class="list-item">Option 3</div>
+                </div>
+
+            </div>
+            <div id="column-right">
+                <img src="img/lexus_banner.png" alt="">
+                <img src="img/sport_banner.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="fixed_container">
+        <div id="special-news">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum
+            has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+            of
+            type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+            the
+            leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+            the
+            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+            software like Aldus PageMaker including versions of Lorem Ipsum
+        </div>
+    </div>
+
+    <!-- <div class="fixed_container">
+            <img src="./cloud.png" alt="">
+        </div> -->
+    <!-- <a href="#" id="up-button">Прокрутить наверх</a>  -->
+</body>
+
+</html>
