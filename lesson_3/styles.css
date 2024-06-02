@@ -41,6 +41,14 @@ body {
     padding: 0;
     min-width: 1000px;
     /* overflow: hidden; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    padding: 27px 0 27px 18px;
+    margin: 0 0 34px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 /* Единицы измерения: px - пиксели. em - ? ex - размер блока равный высоте буквы x
@@ -130,12 +138,12 @@ body {
 }
 
 .menu_button {
-    padding-right: 40px
+    padding-right: 35px
 
 }
 
 #column-left {
-    background-color: red;
+    background-color: white;
     width: 250px;
     float: left;
 }
@@ -186,4 +194,58 @@ body {
 
 .list-item {
     display: list-item;
+}
+
+#central-container {
+    padding-top: 20px;
+    /* background-color: rgb(249, 249, 249); */
+    background-color: #f9f9f9;
+    background-image: url('./background-top.png');
+    background-repeat: repeat-x;
+}
+
+#site_search {
+    background-color: #f3f3f3;
+    background-image: url('./icon_search.png');
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+}
+
+.news-item {
+    padding-left: 18px;
+    margin-bottom: 27px;
+}
+
+.news-item-text {
+    margin-bottom: 20px;
+}
+/* !!! Чтобы элементы были позиционированы абсолютно внутри какого-то элемента, position родительского элемента должен быть отличен от static */
+
+.news-item-props {
+    font-size: 12px;
+    position: relative
+}
+
+
+.news-item-props a {
+    color: #91919f;
+}
+
+.news-time {
+    position: absolute;
+    top: 0px;
+    left: 120px;
+    background-image: url('./icon_time.png');
+    background-repeat: no-repeat;
+    padding-left: 13px;
+}
+
+.news-comments-count {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    background-image: url('./icon_comments.png');
+    background-repeat: no-repeat;
+    padding-left: 13px;
 }
