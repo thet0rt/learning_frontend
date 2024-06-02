@@ -153,11 +153,37 @@ body {
 }
 
 #column-right {
-    background-color: blue;
     width: 250px;
     float: right;
 }
 
+#column-right img {
+    margin-bottom: 20px;
+}
+
 #special-news {
     margin-top: 20px;
+}
+
+.table {
+    display: table;
+    border-collapse: collapse;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.list {
+    margin-left: 20px;
+}
+
+.list-item {
+    display: list-item;
 }
