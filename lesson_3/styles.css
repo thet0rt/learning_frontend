@@ -25,6 +25,7 @@
     /* margin-top: 50px; */
     /* margin-left: 100px; */
 }
+
 /* Margin вертикальных элементов между собой пересекаются (схлопываются) */
 /* Из двух элементов будет выбран максимальный */
 /* Применить стили к тегу а только в элементе black-bar */
@@ -34,7 +35,8 @@
     /* visibility: hidden; */
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     min-width: 1000px;
@@ -83,4 +85,51 @@ html, body {
     right: 30px;
     background-color: white;
     padding: 10px;
+}
+
+#city_selection {
+    width: auto;
+    float: left;
+    margin-left: 180px;
+    margin-top: 50px;
+    /* margin-top: 40px;
+    margin-left: 160px; */
+}
+
+#site_search {
+    /* position: relative;
+    top: 40px;
+    left: 40px;
+    right: 680px; */
+    margin-top: 40px;
+    float: right;
+    width: 320px;
+    height: 45px;
+}
+
+#cloud {
+    float: right;
+    margin-right: 10px;
+    margin-top: 50px
+        /* margin-right: 420px; */
+}
+
+#temperature {
+    float: right;
+    margin-right: 25px;
+    margin-top: 55px;
+    color: grey;
+}
+
+#header {
+    height: 100px;
+}
+
+.header_panel {
+    height: 70px;
+}
+
+.menu_button {
+    padding-right: 40px
+
 }
