@@ -133,3 +133,23 @@ body {
     padding-right: 40px
 
 }
+
+#column-left {
+    background-color: red;
+    width: 250px;
+    float: left;
+}
+
+#column-center {
+    background-color: green;
+    width: 420px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+}
+
+#column-right {
+    background-color: blue;
+    width: 250px;
+    float: right;
+}
