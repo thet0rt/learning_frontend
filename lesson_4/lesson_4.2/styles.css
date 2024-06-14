@@ -3,7 +3,7 @@ html, body {
     padding: 0;
 }
 
-#container {
+.container, #changeColor, textarea {
     margin: 20px;
 }
 
@@ -11,4 +11,9 @@ html, body {
     color: red;
     font-weight: bold;
     font-size: 18px;
+}
+
+.textarea {
+    width: 300px;
+    height: 200px;
 }
