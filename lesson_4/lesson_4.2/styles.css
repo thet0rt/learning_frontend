@@ -1,0 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    margin: 20px;
+}
+
+.newStyle {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
