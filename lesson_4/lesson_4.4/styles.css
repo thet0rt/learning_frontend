@@ -1,0 +1,352 @@
+/* div {
+    background-color: black; 
+    color: white
+} */
+/* Через точку мы обращаемся к классу */
+/* .black_bar {
+    background-color: black;
+}
+.white_text {
+    color: white;
+} */
+/* Через решетку мы обращаемся к id объекта */
+/* margin - внешний отступ */
+#black-bar {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    /*
+    margin auto автоматически выравнивает элемент
+    margin: 0 auto;
+    width: 300px; */
+    /* width: 300px; */
+    /* height: 60px; */
+    /* margin: 50px; */
+    /* margin-top: 50px; */
+    /* margin-left: 100px; */
+}
+
+/* Margin вертикальных элементов между собой пересекаются (схлопываются) */
+/* Из двух элементов будет выбран максимальный */
+/* Применить стили к тегу а только в элементе black-bar */
+#black-bar a {
+    color: white;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1000px;
+    /* overflow: hidden; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    padding: 27px 0 27px 18px;
+    margin: 0 0 34px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Единицы измерения: px - пиксели. em - ? ex - размер блока равный высоте буквы x
+% проценты от размера окна. in (inch) - абсолютные размеры в дюймах
+Можно использовать см, мм, но абсолютные единицы измерения вообще не рекомендуется использовать */
+
+/* Есть параметры max_height, min_height, max_width, min_width */
+
+.fixed_container {
+    width: 960px;
+    margin: 0 auto;
+    position: relative
+}
+
+.inline-block {
+    background-color: yellow;
+    padding: 10px;
+    width: 50px;
+    text-align: right;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#datetime {
+    float: right;
+}
+
+/* Тег position relative позволяет задавать отступы от текущего расположения элемента */
+/* Position absolute позволяет задавать отступы от окна браузера */
+#logo {
+    position: absolute;
+    top: 40px;
+    /* left: 40px; */
+    /* right: 100px; */
+}
+
+/* Position fixed - фиксированно относительно окна браузера */
+
+#up-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    padding: 10px;
+}
+
+#city_selection {
+    width: auto;
+    float: left;
+    margin-left: 180px;
+    margin-top: 50px;
+    /* margin-top: 40px;
+    margin-left: 160px; */
+}
+
+#site_search {
+    /* position: relative;
+    top: 40px;
+    left: 40px;
+    right: 680px; */
+    margin-top: 40px;
+    float: right;
+    width: 320px;
+    height: 45px;
+}
+
+#cloud {
+    float: right;
+    margin-right: 10px;
+    margin-top: 50px
+        /* margin-right: 420px; */
+}
+
+#temperature {
+    float: right;
+    margin-right: 25px;
+    margin-top: 55px;
+    color: grey;
+}
+
+#header {
+    height: 100px;
+}
+
+.header_panel {
+    height: 70px;
+}
+
+.menu_button {
+    padding-right: 35px
+}
+
+#column-left {
+    background-color: white;
+    width: 250px;
+    float: left;
+}
+
+#column-center {
+    width: 420px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+}
+
+#central-container .fixed_container {
+    overflow-y: hidden;
+}
+
+#column-right {
+    width: 250px;
+    float: right;
+}
+
+#column-right img {
+    margin-bottom: 20px;
+}
+
+#special-news {
+    margin-top: 20px;
+}
+
+.table {
+    display: table;
+    border-collapse: collapse;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.list {
+    margin-left: 20px;
+}
+
+.list-item {
+    display: list-item;
+}
+
+#central-container {
+    padding-top: 20px;
+    /* background-color: rgb(249, 249, 249); */
+    background-color: #f9f9f9;
+    background-image: url('img/background-top.png');
+    background-repeat: repeat-x;
+}
+
+#site_search {
+    background-color: #f3f3f3;
+    background-image: url('img/icon_search.png');
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+}
+
+.news-item {
+    padding-left: 18px;
+    margin-bottom: 27px;
+}
+
+.news-item-text {
+    margin-bottom: 20px;
+}
+
+/* !!! Чтобы элементы были позиционированы абсолютно внутри какого-то элемента, position родительского элемента должен быть отличен от static */
+
+.news-item-props {
+    font-size: 12px;
+    position: relative
+}
+
+
+.news-item-props a {
+    color: #91919f;
+    text-decoration: none;
+}
+
+.news-time {
+    position: absolute;
+    top: 0px;
+    left: 120px;
+    background-image: url('img/icon_time.png');
+    background-repeat: no-repeat;
+    padding-left: 13px;
+}
+
+.news-comments-count {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    background-image: url('img/icon_comments.png');
+    background-repeat: no-repeat;
+    padding-left: 13px;
+}
+
+#main_news {
+    height: 320px;
+    /* margin-bottom: 20px; */
+    background-image: url('./img/1_news_background.png');
+}
+
+#main_news a {
+    color: white;
+}
+
+#main_news .news-item-props {
+    font-size: 12px;
+    color: white;
+    position: relative;
+}
+
+
+
+#main_news .news-item-props a {
+    position: absolute;
+    top: 115px;
+    left: 20px;
+}
+
+#news_header {
+    font-size: 30px;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+#news-date {
+    position: absolute;
+    top: 270px;
+    left: 20px;
+}
+
+#main_news .news-item-props .news-time {
+    position: absolute;
+    top: 270px;
+    left: 120px;
+}
+
+
+.news_row {
+    margin-top: 20px;
+    height: 235px;
+}
+
+.piece_of_news {
+    width: 200px;
+    height: 235px;
+    position: relative;
+}
+
+.left_new {
+    float: left;
+}
+
+.right_new {
+    float: right;
+}
+
+.piece_of_news .news-time {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    background-image: url('img/icon_time.png');
+    background-repeat: no-repeat;
+    padding-left: 13px;
+}
+
+
+.piece_of_news .news-comments-count {
+    position: absolute;
+    top: 0;
+    left: 160px;
+    background-image: url('img/icon_comments.png');
+    background-repeat: no-repeat;
+    padding-left: 13px;
+}
+
+.piece_of_news a {
+    color: #91919f;
+    text-decoration: none;
+}
+
+.news_text {
+    font-size: 14px;
+}
+
+.piece_of_news img {
+    max-width: 200px;
+    max-height: 140px;
+}
+
+.piece_of_news .news-item-props {
+    position: absolute;
+    top: 220px;
+}
